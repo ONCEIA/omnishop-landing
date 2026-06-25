@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMNISHOP - Tienda de Salud y Bienestar</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: white; border-bottom: 1px solid #f0f0f0; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
+        header .container { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 24px; font-weight: bold; }
+        .logo span:first-child { color: #333; }
+        .logo span:last-child { color: #FFD93D; }
+        .cta-btn { background: #FF6B9D; color: white; padding: 10px 20px; border: none; border-radius: 25px; cursor: pointer; font-weight: bold; text-decoration: none; display: inline-block; transition: background 0.3s; }
+        .cta-btn:hover { background: #e85a8a; }
+        .hero { padding: 80px 20px; background: linear-gradient(135deg, rgba(255,107,157,0.1) 0%, rgba(255,217,61,0.1) 100%); text-align: center; }
+        .hero h1 { font-size: 48px; margin-bottom: 20px; color: #333; }
+        .hero h1 span { color: #FF6B9D; }
+        .hero p { font-size: 18px; color: #666; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+        .products { padding: 80px 20px; background: #f9f9f9; }
+        .products h2 { text-align: center; font-size: 36px; margin-bottom: 50px; color: #333; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .product-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
+        .product-image { width: 100%; height: 300px; background: linear-gradient(135deg, #FFE5F0 0%, #FFF9E6 100%); display: flex; align-items: center; justify-content: center; font-size: 60px; }
+        .product-info { padding: 20px; }
+        .product-info h3 { color: #333; margin-bottom: 10px; font-size: 18px; }
+        .product-info p { color: #666; font-size: 14px; margin-bottom: 15px; line-height: 1.6; }
+        .product-info a { color: #FF6B9D; text-decoration: none; font-weight: bold; }
+        footer { background: #333; color: white; text-align: center; padding: 40px 20px; }
+        footer p { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><span>OMNI</span><span>SHOP</span></div>
+            <a href="https://wa.me/573000000000" class="cta-btn">Pedir Ahora</a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Tu cuerpo merece <span>lo mejor</span></h1>
+            <p>Productos naturales para el crecimiento del cabello, equilibrio digestivo y bienestar integral.</p>
+            <a href="https://wa.me/573000000000" class="cta-btn">¡Lo quiero!</a>
+        </div>
+    </section>
+    <section class="products">
+        <div class="container">
+            <h2>Nuestros Productos</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">💇</div>
+                    <div class="product-info">
+                        <h3>Sérum Crecimiento Capilar</h3>
+                        <p>Fortalece tu cabello desde la raíz.</p>
+                        <a href="https://wa.me/573000000000">Pedir por WhatsApp →</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">💊</div>
+                    <div class="product-info">
+                        <h3>Cápsulas Aceite de Orégano</h3>
+                        <p>Combate la cándida de forma natural.</p>
+                        <a href="https://wa.me/573000000000">Pedir por WhatsApp →</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">✨</div>
+                    <div class="product-info">
+                        <h3>Colágeno + Multivitaminas</h3>
+                        <p>Piel radiante y energía todo el día.</p>
+                        <a href="https://wa.me/573000000000">Pedir por WhatsApp →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <h3>OMNISHOP</h3>
+            <p>Tienda de Salud y Bienestar</p>
+        </div>
+    </footer>
+</body>
+</html>
